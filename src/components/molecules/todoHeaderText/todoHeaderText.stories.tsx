@@ -5,7 +5,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import TodoHeaderText from './';
 
 export default {
-  title: 'Toto/Mole/HeaderText',
+  title: 'Todo/Mole/HeaderText',
   component: TodoHeaderText,
   // argTypes: {
   //   backgroundColor: { control: 'color' },

@@ -1,13 +1,17 @@
 import React from 'react';
 
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faStar, faHandSpock } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
-const Icon = (props: any) => {
-  if (props.isLike) {
-    return <FontAwesomeIcon icon={faStar} {...props}/>
-  }
-  return <FontAwesomeIcon icon={faHandSpock} {...props}/>
-};
+export const CompleteIcon = (props: any) => {
+  return <img src="/imgs/Star_Pull.png" {...props}></img>
+}
+export const UnCompleteIcon = (props: any) => {
+  return <img src="/imgs/Start_empty.png" {...props}></img>
+}
 
-export default Icon;
+export const DeleteIcon = (props: any) => {
+  return <FontAwesomeIcon icon={faTrash} {...props} />
+}
+
+// export default Icon;

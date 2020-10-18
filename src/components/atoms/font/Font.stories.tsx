@@ -6,16 +6,21 @@ import Font from './';
 
 
 export default {
-  title: 'Toto/Atom/Checkbox',
+  title: 'Todo/Atom/Font',
   component: Font,
   // argTypes: {
   //   backgroundColor: { control: 'color' },
   // },
 } as Meta;
 
-const Template: Story = (args) => <Font {...args} />;
+const Template: Story = (args) => <Font {...args} >test</Font>;
 
-export const Normal = Template.bind({});
-Normal.args = {
-  
+export const cancelFont = Template.bind({});
+cancelFont.args = {
+  isDelete: true
+};
+
+export const unCancelFont = Template.bind({});
+unCancelFont.args = {
+  isDelete: false
 };

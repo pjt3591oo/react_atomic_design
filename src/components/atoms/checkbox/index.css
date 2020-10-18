@@ -1,0 +1,50 @@
+#custom-checkbox.checkbox *{
+  cursor: pointer;
+}
+
+#custom-checkbox.checkbox input{
+  opacity: 0;
+}
+
+#custom-checkbox.checkbox span{
+  position: relative;
+  display: inline-block;
+  margin-left: -25px;
+  vertical-align: top;
+  width: 18px; 
+  height: 18px;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+}
+
+#custom-checkbox.checkbox:hover span{
+  border-color: teal;
+}
+
+#custom-checkbox.checkbox span:before{
+  content: "\2713"; /* comment content to use custom icon classes */
+  position: absolute;
+  top: 0; left: 0;  right: 0; bottom: 0;
+  opacity: 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+  vertical-align: middle;
+  color: teal;
+}
+
+#custom-checkbox.checkbox input[type=checkbox]:checked + span{
+  border-color: teal;
+  background-color: teal;
+}
+
+#custom-checkbox.checkbox input[type=checkbox]:checked + span:before{
+  color: #fff;
+  opacity: 1;
+  transition: color .3 ease-out;
+}
+
+#custom-checkbox.checkbox input[type=checkbox]:disabled + span{
+  border-color: #ddd !important;
+  background-color: #ddd !important;
+}

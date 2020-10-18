@@ -5,7 +5,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import Input from './';
 
 export default {
-  title: 'Toto/Atom/Input',
+  title: 'Todo/Atom/Input',
   component: Input,
   // argTypes: {
   //   backgroundColor: { control: 'color' },

@@ -5,7 +5,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import TodoList from './';
 
 export default {
-  title: 'Toto/Org/List',
+  title: 'Todo/Org/List',
   component: TodoList,
   argTypes: {
     backgroundColor: { control: 'color' },
@@ -17,6 +17,14 @@ const Template: Story = (args) => <TodoList {...args} />;
 
 export const tht = Template.bind({});
 tht.args = {
-
+  onCheckBtnClick: (args: any) => {},
+  onLikeBtnClick: (args: any) => {},
+  onDeleteByItem: (args: any) => { },
+  todos: [{
+    checked: false,
+    title: "title3",
+    isComplete: false,
+    isDelete: false,
+  }]
 };
 

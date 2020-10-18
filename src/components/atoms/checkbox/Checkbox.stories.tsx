@@ -5,7 +5,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import Checkbox from './';
 
 export default {
-  title: 'Toto/Atom/Checkbox',
+  title: 'Todo/Atom/Checkbox',
   component: Checkbox,
   // argTypes: {
   //   backgroundColor: { control: 'color' },

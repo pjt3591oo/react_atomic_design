@@ -5,7 +5,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import Todo from './';
 
 export default {
-  title: 'Toto/Temp/Todo',
+  title: 'Todo/Temp/Todo',
   component: Todo,
   argTypes: {
     backgroundColor: { control: 'color' },

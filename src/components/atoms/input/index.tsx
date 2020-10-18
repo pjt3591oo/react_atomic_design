@@ -1,7 +1,9 @@
 import React from 'react';
 
-const Input = (props: any) => {
-  return <input {...props}></input>;
-};
+import styled from 'styled-components';
+
+const Input = styled.input.attrs((props: any) => ({
+}))<any>`
+`;
 
 export default Input;
